@@ -10,6 +10,6 @@ func NewGun() Weapon {
 	return &Gun{10}
 }
 
-func (g Gun)Attack() {
+func (g Gun) Attack() {
 	fmt.Println("Gun attack")
 }

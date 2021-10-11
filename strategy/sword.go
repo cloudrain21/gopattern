@@ -2,9 +2,9 @@ package strategy
 
 import "fmt"
 
-type Sword struct {}
+type Sword struct{}
 
-func (d *Sword)Attack() {
+func (d *Sword) Attack() {
 	fmt.Println("Sword Attack")
 }
 

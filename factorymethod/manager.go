@@ -9,7 +9,7 @@ type ElevatorManager struct {
 	sched Scheduler
 }
 
-func (e *ElevatorManager)RequestElevator() {
+func (e *ElevatorManager) RequestElevator() {
 	e.sched.schedule()
 }
 

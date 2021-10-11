@@ -8,10 +8,10 @@ func NewGameCharacter() *GameCharacter {
 	return &GameCharacter{NewDefaultWeapon()}
 }
 
-func (g *GameCharacter)SetWeapon(weapon Weapon) {
+func (g *GameCharacter) SetWeapon(weapon Weapon) {
 	g.weapon = weapon
 }
 
-func (g GameCharacter)Attack() {
+func (g GameCharacter) Attack() {
 	g.weapon.Attack()
 }

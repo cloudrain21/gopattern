@@ -7,7 +7,7 @@ func ExampleStrategy1() {
 	character.Attack()
 
 	character.SetWeapon(NewSword())
-	character.weapon.Attack()  // 이렇게 사용하면 안됨. weapon 변수 노출
+	character.weapon.Attack() // 이렇게 사용하면 안됨. weapon 변수 노출
 
 	character.SetWeapon(NewGun())
 	character.Attack()

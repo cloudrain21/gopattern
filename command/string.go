@@ -2,9 +2,9 @@ package command
 
 import "fmt"
 
-type StringCommand struct {}
+type StringCommand struct{}
 
-func (i *StringCommand)Execute() {
+func (i *StringCommand) Execute() {
 	fmt.Println("String Command")
 }
 

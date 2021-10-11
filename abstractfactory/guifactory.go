@@ -1,6 +1,5 @@
 package abstractfactory
 
-
 type GUIFactory interface {
 	CreateButton() Button
 	CreateScroll() Scroll

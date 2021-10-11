@@ -22,7 +22,6 @@ func ExampleCommand1() {
 	// 222
 }
 
-
 // 특정 타입을 Command interface 형으로 slice 로 넣어두고 꺼내서 수행하는 방식
 func ExampleCommand2() {
 	l := []Command{}
@@ -40,7 +39,6 @@ func ExampleCommand2() {
 	// bbb
 	// ccc
 }
-
 
 // 다양한 명령 객체를 Command interface slice 에 넣어두고, 이를 같은 interface 로 꺼내서 수행하는 방식
 func ExampleCommand3() {

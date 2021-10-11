@@ -6,8 +6,8 @@ type Weapon interface {
 	Attack()
 }
 
-type DefaultWeapon struct {}
+type DefaultWeapon struct{}
 
-func (d DefaultWeapon)Attack() {
+func (d DefaultWeapon) Attack() {
 	fmt.Println("DefaultWeapon attack")
 }

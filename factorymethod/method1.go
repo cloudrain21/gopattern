@@ -9,7 +9,6 @@ func NewMethod1Scheduler() *Method1Scheduler {
 type Method1Scheduler struct {
 }
 
-func (m *Method1Scheduler)schedule() {
+func (m *Method1Scheduler) schedule() {
 	fmt.Println("method1 scheduling")
 }
-

@@ -16,9 +16,9 @@ type AbstConnectHelper struct {
 	algo ConnectAlgorithmOperator
 }
 
-func (a *AbstConnectHelper)Connect(user string, pass string) error {
-	a.algo.Authentication(user,pass)
-	a.algo.Authorization(user,pass)
+func (a *AbstConnectHelper) Connect(user string, pass string) error {
+	a.algo.Authentication(user, pass)
+	a.algo.Authorization(user, pass)
 	return nil
 }
 
