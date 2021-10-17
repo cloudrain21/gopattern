@@ -22,6 +22,10 @@ func (a *AbstConnectHelper) Connect(user string, pass string) error {
 	return nil
 }
 
-func NewAbstConnectHelper() ConnectHelper {
+func NewAbstConnectHelper() *AbstConnectHelper {
 	return &AbstConnectHelper{NewDefaultConnectAlgorithmOperator()}
+}
+
+func (a *AbstConnectHelper) ChangeConnectionAlgorithmOperator(algo ConnectAlgorithmOperator) {
+	a.algo = algo
 }
