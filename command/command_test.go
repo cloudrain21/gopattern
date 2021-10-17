@@ -1,18 +1,21 @@
 package command
 
 func ExampleCommand() {
-	commandList := []Command{}
+	heater := NewHeater()
+	lamp := NewLamp()
 
-	commandList = append(commandList, NewIntCommand())
-	commandList = append(commandList, NewStringCommand())
-	commandList = append(commandList, NewIntCommand())
+	heaterOnCommand := NewHeaterOnCommand(heater)
+	lampOnCommand := NewLampOnCommand(lamp)
 
-	for _, c := range commandList {
-		c.Execute()
-	}
+	okGoogle := NewOKGoogle()
+
+	okGoogle.SetCommand(heaterOnCommand)
+	okGoogle.Talk()
+
+	okGoogle.SetCommand(lampOnCommand)
+	okGoogle.Talk()
 
 	// Output:
-	// Int Command
-	// String Command
-	// Int Command
+	// Heater on
+	// Lamp on
 }
