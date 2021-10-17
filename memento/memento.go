@@ -10,6 +10,6 @@ func NewMemento(state string) *Memento {
 	}
 }
 
-func (m *Memento)GetSavedState() string {
+func (m *Memento) GetState() string {
 	return m.state
 }

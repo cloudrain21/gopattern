@@ -1,16 +1,16 @@
 package memento
 
 func ExampleMemento() {
-	savedStatus := make([]*Memento,0)
+	savedStatus := make([]*Memento, 0)
 
 	originator := NewOriginator()
-	originator.Set("state1")
-	originator.Set("state2")
-	savedStatus = append(savedStatus, originator.SaveToMemento())
-	originator.Set("state3")
-	savedStatus = append(savedStatus, originator.SaveToMemento())
-	originator.Set("state4")
-	originator.RestoreFromMemento(savedStatus[1])
+	originator.SetState("state1")
+	originator.SetState("state2")
+	savedStatus = append(savedStatus, originator.CreateMemento())
+	originator.SetState("state3")
+	savedStatus = append(savedStatus, originator.CreateMemento())
+	originator.SetState("state4")
+	originator.Restore(savedStatus[1])
 
 	// Output:
 	// Originator: Setting state to  state1
